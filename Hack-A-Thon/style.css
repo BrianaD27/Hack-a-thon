@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    font-family: "Poppins", cursive;
+    margin: 20px;
+}
+
+body{
+    --color-dark: hsl(345, 12%, 93%);
+    --color-light: #586ea6;
+    background: linear-gradient(45deg,#0023d2,#f27e02);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+}
+
+nav
+{
+    background-color:transparent;
+}
+
+
+
+.board {
+    text-align: center;
+}
+
+.board .leaderboard{
+    margin-bottom: 1em;
+}
+
+.board .duration{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.board .duration > button{
+    border: 1px solid var(--color-light);
+    padding: .5em 2em;
+    border-radius: 50px;
+    background-color:beige;
+    cursor: pointer;
+}
+
+.board .duration > button:hover{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.active{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#profile{
+    /* display: flex; */
+
+    margin-top: 3em;
+}
+
+#profile .flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+#profile .flex .item{
+    display: right;
+    align-items: right;
+}
+
+#profile .flex img{
+    align-items: right;
+    width: 20%;
+    border-radius: 50%;
+}
+
+#profile .flex .info{
+   padding: 1em;
+}
+
+.text-dark{
+    color: var(--color-dark);
+}
+
+.text{
+    align-items: center;
+    background-color: rgb(204, 45, 45);
+}
+
+html {
+    color: rgb(255, 255, 255);
+}
+
+.token {
+    text-align: right;
+
+    
+
+
+}
+
+h1 {
+    text-align: center;
+
+
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff);
+}
+
+a {
+    text-align: left;
+}
+
+.myDiv {
+    color:white(255, 255, 255);
+    font-size: 25px;
+    
+
+
+}
+.myDiv {
+    color:white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.myDiv li .list_text {
+    list-style: none;
+
+}
+
+p {
+    text-align: center;
+}
+
+.img_deg {
+    position: relative;
+    top: 35px;
+    
+
+}
+
+.img_deg2 {
+    position: relative;
+    top: 35px;
+}
+
+.img_deg3 {
+    position: relative;
+    top: 40px;
+}
