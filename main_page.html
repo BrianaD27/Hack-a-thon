@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Active</title>
+    <link rel="stylesheet" href="mp_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.3"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises.
+      See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsnUUS5tQ5GCrnTZzgCVS5PEqfsTY5Oik&callback=initMap&v=weekly"
+      defer
+    ></script>
+    
+    <script src="index.js"></script>
+
+    <nav class="navbar">
+        <header>
+            <div class="pic-text">
+                <span class="image">
+                    <a href="/">
+                        <img src="trojan2.png" alt="" >
+                    </a>
+                </span>
+                <div class="text header-text">
+                    
+                    <span class="name">Active_Trojan27</span>
+                    
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">HOME</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/">
+                            <i class='bx bx-objects-horizontal-left icon' ></i>
+                            <span class="text nav-text">LEADERBOARD</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/">
+                            <i class='bx bx-shopping-bag icon' ></i>
+                            <span class="text nav-text">STORE</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/">
+                            <i class='bx bx-cog icon' ></i>
+                            <span class="text nav-text">SETTINGS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="/">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class = "text nav-text">LOGOUT</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="Stats_Frame">
+        <h1 id="Header_text">STATS</h1>
+        <ul>
+            <li class="nav-link">
+                <i class='bx bx-walk icon'></i>
+                <span class="text nav-text">WALK: 20mi</span>
+            </li>
+            <li class="nav-link">
+                <i class='bx bx-run icon'></i>
+                <span class="text nav-text">RUN: 5mi</span>
+            </li>
+            <li class="nav-link">
+                <i class='bx bx-cycling icon'></i>
+                <span class="text nav-text">BIKE: 1mi</span>
+            </li>
+            <li class="nav-link">
+                <i class='bx bx-dumbbell icon'></i>
+                <span class="text nav-text">ACTIVE TIME: 3hrs</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

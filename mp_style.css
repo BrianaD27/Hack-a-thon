@@ -1,0 +1,313 @@
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+
+body{
+    height: 100vh;
+    
+}
+
+/*----- NavBar ------ */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+
+}
+
+/*----- Reused CSS ------ */
+.navbar .text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+
+.navbar .image {
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    height: 50px;
+    background: none;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 30px;
+}
+
+.navbar li .icon,
+.navbar li .text{
+    color: var(--text-color);
+    transition: var(--tran-02);
+
+}
+
+.navbar header{
+    position: relative;
+
+}
+
+.navbar .pic-text img{
+    width: 250px;
+    border-radius: 6px;
+    position: relative;
+    right: 20px;
+}
+
+.navbar header .pic-text{
+    display: flex;
+    align-items: center;
+    background: none;
+    position: relative;
+    top: 30px;
+    left: 2%;
+    right: 2%;
+    width: 200px;
+    height: 200px;
+
+}
+
+
+header .pic-text .header-text{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-text .name{
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    left: 40px;
+    font-weight: 600;
+}
+
+.navbar header .toggle {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 22px;
+
+}
+
+.navbar li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--tran-04);
+}
+
+.navbar li a:hover{
+    background: var(--primary-color);
+}
+
+.navbar li a:hover .icon,
+.navbar li a:hover .text{
+    color: var(--sidebar-color);
+}
+
+.navbar .menu-bar{
+    background: none;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 250px;
+    width: 220px;
+}
+
+.navbar .menu-bar .bottom-content {
+    position: relative;
+    top: 250px;
+}
+
+.google-map {
+    width: 70%;
+    height: 920px;
+    background-color: none;
+    position: fixed;
+    right: 0%;
+
+}
+
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+    height: 100%;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.Stats_Frame{
+    position: fixed;
+    top: 0%;
+    left: 35%;
+    height: 15%;
+    width: 800px;
+    padding: 10px 14px;
+    border-radius: 1rem;
+    background: white;
+}
+
+.Stats_Frame #Header_text{
+    position: relative;
+    left: 45%;
+    top: 10%;
+    color: var(--text-color);
+    font: 'Poppins', sans-serif;
+}
+
+.Stats_Frame li {
+    height: 50px;
+    background-color: none;
+    border-color: #695CFE;
+    border-width: 1rem;
+    border-radius: 1rem;
+    margin-top: 10px;
+    width: 25%;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+.Stats_Frame li{
+    display: grid;
+    grid-template-rows: 100;
+}
+
+.Stats_Frame .icon{
+    position: relative;
+    left: 0%;
+    
+} 
+
+.Stats_Frame ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    top: 20px;
+    width: 100%;
+    height: 10px;
+}
+
+.Stats_Frame li .icon{
+    font-size: 30px;
+}
+
+.Stats_Frame li .text{
+    font-size: 20px;
+}
+
+span {
+    display: block;
+}
+
+
+.custom-map-control-button {
+    background-color:white;
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 140px;
+    margin-left: 430px;
+    width: 400px;
+    font: 400 20px Roboto, Arial, sans-serif;
+    height: 40px;
+    cursor: pointer;
+  }
+  .custom-map-control-button:hover {
+    background: rgb(235, 235, 235);
+  }
+
+
+
+
+
+
+/*
+  .custom-map-control-button {
+    background-color: red;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
+  }
+  .custom-map-control-button:hover {
+    background: rgb(235, 235, 235);
+  }
+
+
+
+
