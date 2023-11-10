@@ -1,0 +1,175 @@
+body{
+background:linear-gradient(orange,blue);
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.sign-up{
+    padding: 30px;
+    width: 500px;
+    height: 680px;
+    margin:auto;
+    border-radius: 30px;
+    background: linear-gradient(white,beige,lightgrey);
+    border-style:initial;
+}
+
+p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display:flexbox;
+    align-content:flex-end;
+}
+
+form input{
+    width: 50%;
+    padding: 5px;
+    border-width: 2px;
+    border-radius: 10px;
+    margin-left: 4px;
+    border-color: black ;
+}
+
+
+input[type = "submit"]{
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border:none;
+    background-color: orange;
+}
+
+input[type = "button"]{
+
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: orange;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumhb Sans', sans-serif;
+}
+
+.NavBar {
+    background: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    align-items: top;
+    font-size: 1.2rem;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_frame {
+    display: inline;
+    justify-content: space-between;
+}
+
+#navbar_pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fa-gem {
+    margin-right: 0.5rem;
+}
+
+.navbar_menu {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar_name {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_item {
+    height: 20px;
+}
+
+.navbar_links {
+    color:black;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-decoration: none;
+    padding: 1em 3rem;
+    margin: 20px;
+}
+
+.navbar_links:hover {
+    color: white;
+    background-color: blue;
+
+    transition: all 0.3s ease;
+}
+
+.container{
+    position:relative; 
+    left: 100px; 
+    top:20px;
+    border-width:20cm;
+    border-style: initial;
+    margin-left: 20px;
+    text-align:left;
+    
+}
+
+.badges{
+    background-color:blue;
+    color:black;
+    border-radius:80px;
+    position:relative;
+    width:200px;
+    height:200px;
+    top:150px;
+    display:inline-block;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+
+}
+
+.badges img{
+    border-width:80px;
+    border-radius:80px;
+    margin:auto;
+    position:relative;
+    top:30px;
+    display:inline;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    left:25px;
+
+}
